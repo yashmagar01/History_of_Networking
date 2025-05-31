@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Networking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <svg xmlns="http://www.w3.org/2000/svg" height="200px" width="200px" viewBox="0 0 200 200" class="pencil">
+                <defs>
+                    <clipPath id="pencil-eraser">
+                        <rect height="30" width="30" ry="5" rx="5"></rect>
+                    </clipPath>
+                </defs>
+                <circle transform="rotate(-113,100,100)" stroke-linecap="round" stroke-dashoffset="439.82" stroke-dasharray="439.82 439.82" stroke-width="2" stroke="currentColor" fill="none" r="70" class="pencil__stroke"></circle>
+                <g transform="translate(100,100)" class="pencil__rotate">
+                    <g fill="none">
+                        <circle transform="rotate(-90)" stroke-dashoffset="402" stroke-dasharray="402.12 402.12" stroke-width="30" stroke="hsl(223,90%,50%)" r="64" class="pencil__body1"></circle>
+                        <circle transform="rotate(-90)" stroke-dashoffset="465" stroke-dasharray="464.96 464.96" stroke-width="10" stroke="hsl(223,90%,60%)" r="74" class="pencil__body2"></circle>
+                        <circle transform="rotate(-90)" stroke-dashoffset="339" stroke-dasharray="339.29 339.29" stroke-width="10" stroke="hsl(223,90%,40%)" r="54" class="pencil__body3"></circle>
+                    </g>
+                    <g transform="rotate(-90) translate(49,0)" class="pencil__eraser">
+                        <g class="pencil__eraser-skew">
+                            <rect height="30" width="30" ry="5" rx="5" fill="hsl(223,90%,70%)"></rect>
+                            <rect clip-path="url(#pencil-eraser)" height="30" width="5" fill="hsl(223,90%,60%)"></rect>
+                            <rect height="20" width="30" fill="hsl(223,10%,90%)"></rect>
+                            <rect height="20" width="15" fill="hsl(223,10%,70%)"></rect>
+                            <rect height="20" width="5" fill="hsl(223,10%,80%)"></rect>
+                            <rect height="2" width="30" y="6" fill="hsla(223,10%,10%,0.2)"></rect>
+                            <rect height="2" width="30" y="13" fill="hsla(223,10%,10%,0.2)"></rect>
+                        </g>
+                    </g>
+                    <g transform="rotate(-90) translate(49,-30)" class="pencil__point">
+                        <polygon points="15 0,30 30,0 30" fill="hsl(33,90%,70%)"></polygon>
+                        <polygon points="15 0,6 30,0 30" fill="hsl(33,90%,50%)"></polygon>
+                        <polygon points="15 0,20 10,10 10" fill="hsl(223,10%,10%)"></polygon>
+                    </g>
+                </g>
+            </svg>
+            <p class="loading-text">Loading Net Verse...</p>
+        </div>
+    </div>
+    
+    <nav class="new-nav">
+        <div class="new-nav-container">
+            <a href="index.html" class="new-nav-logo">Net Verse</a>
+            <button class="new-nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="new-nav-menu">
+                <ul class="new-nav-list">
+                    <li class="new-nav-item"><a href="#home" class="new-nav-link">Home</a></li>
+                    <li class="new-nav-item"><a href="#about" class="new-nav-link">About</a></li>
+                    <li class="new-nav-item"><a href="#timeline" class="new-nav-link">Timeline</a></li>
+                    <li class="new-nav-item dropdown">
+                        <a href="#" class="new-nav-link dropdown-btn">Mobile Generations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="1g.html">1G</a>
+                            <a href="2g.html">2G</a>
+                            <a href="3g.html">3G</a>
+                            <a href="4g.html">4G</a>
+                            <a href="5g.html">5G</a>
+                            <a href="6g.html">6G</a>
+                        </div>
+                    </li>
+                    <li class="new-nav-item dropdown">
+                        <a href="#" class="new-nav-link dropdown-btn">Computer Generations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="computer1g.html">First Generation</a>
+                            <a href="computer2g.html">Second Generation</a>
+                            <a href="computer3g.html">Third Generation</a>
+                            <a href="computer4g.html">Fourth Generation</a>
+                            <a href="computer5g.html">Fifth Generation</a>
+                        </div>
+                    </li>
+                    <li class="new-nav-item"><a href="#challenges" class="new-nav-link">Challenges</a></li>
+                    <li class="new-nav-item"><a href="#innovators" class="new-nav-link">Innovators</a></li>
+                    <li class="new-nav-item"><a href="#future" class="new-nav-link">Future</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="landing-page" id="home">
+        <div class="particles-container" id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="title" data-aos="fade-up" data-aos-delay="100">History of Networking</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">From 0G to the Future of 6G</p>
+            <div class="cta-container" data-aos="fade-up" data-aos-delay="300">
+                <a href="#timeline" class="cta-btn">
+                    <span>Explore the Evolution</span>
+                    <div class="cta-icon">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="cta-overlay"></div>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                Scroll to explore
+            </div>
+        </div>
+    </header>
+
+    <!-- Did You Know Section -->
+    <section class="did-you-know" id="did-you-know">
+        <div class="container">
+            <h2 class="section-title">Did You Know? <i class="fas fa-lightbulb"></i></h2>
+            <div class="fact-container">
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <p class="fact-text">The first message ever sent over ARPANET, the precursor to the internet, was 'LO' - an attempt to send 'LOGIN' that crashed the system.</p>
+                </div>
+                <div class="fact-buttons">
+                    <button id="prev-fact" class="fact-nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-fact" class="fact-nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="fact-indicator" id="fact-indicator">
+                <!-- Dots will be added dynamically by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="table-of-contents">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Table of Contents</h2>
+            <div class="toc-grid" data-aos="fade-up">
+                <div class="toc-section">
+                    <h3>Mobile Networks</h3>
+                    <ul>
+                        <li><a href="1g.html">1G - The Analog Era</a></li>
+                        <li><a href="2g.html">2G - Digital Revolution</a></li>
+                        <li><a href="3g.html">3G - Mobile Internet</a></li>
+                        <li><a href="4g.html">4G - Broadband Mobile</a></li>
+                        <li><a href="5g.html">5G - Ultra-Fast Connectivity</a></li>
+                        <li><a href="6g.html">6G - Future Vision</a></li>
+                    </ul>
+                </div>
+                <div class="toc-section">
+                    <h3>Computer Evolution</h3>
+                    <ul>
+                        <li><a href="computer1g.html">First Generation - Vacuum Tubes</a></li>
+                        <li><a href="computer2g.html">Second Generation - Transistors</a></li>
+                        <li><a href="computer3g.html">Third Generation - Integrated Circuits</a></li>
+                        <li><a href="computer4g.html">Fourth Generation - Microprocessors</a></li>
+                        <li><a href="computer5g.html">Fifth Generation - AI & Parallel Processing</a></li>
+                    </ul>
+                </div>
+                <div class="toc-section">
+                    <h3>Key Topics</h3>
+                    <ul>
+                        <li><a href="#about">About Mobile Networks</a></li>
+                        <li><a href="#timeline">Network Evolution Timeline</a></li>
+                        <li><a href="#challenges">Technical Challenges</a></li>
+                        <li><a href="#innovators">Leading Innovators</a></li>
+                        <li><a href="#future">Future of Mobile Networks</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">About Mobile Networks</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p>The story of mobile communication began long before smartphones – with pre-cellular radio phones (sometimes called "0G"). In the mid-20th century, vehicles and handheld units could place calls via bulky radio telephone systems, but each call had to be routed through a human operator. These primitive networks (the antecedent to 1G) did not use cell towers; instead, a user's voice was sent directly to a regional switchboard. This era laid the groundwork for the first true cellular networks.</p>
+                        <p>Mobile networks have revolutionized the way we communicate and access information. From the first analog cellular networks to the upcoming 6G technology, each generation has brought significant advancements in speed, reliability, and capabilities.</p>
+                    </div>
+                    <div class="about-stats" data-aos="fade-left">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h3>5B+</h3>
+                            <p>Mobile Users</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>6+</h3>
+                            <p>Generations</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h3>1Tbps+</h3>
+                            <p>Peak Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section" id="comparison">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Network Performance Comparison</h2>
+                <div class="comparison-grid" data-aos="fade-up">
+                    <div class="chart-container">
+                        <canvas id="speedComparisonChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="latencyComparisonChart"></canvas>
+                    </div>
+                </div>
+                <div class="comparison-info" data-aos="fade-up">
+                    <h3>Understanding the Charts</h3>
+                    <p><strong>Maximum Data Speed:</strong> This chart illustrates the theoretical peak download speeds for each generation. Note the logarithmic scale on the Y-axis for speed; this is necessary because speeds increase exponentially with each generation (e.g., 6G is projected to be vastly faster than 1G).</p>
+                    <p><strong>Latency:</strong> This chart shows the typical or target latency (delay) for data transmission in each generation. Lower latency means quicker response times, crucial for real-time applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section" id="timeline">
+            <h2 class="section-title" data-aos="fade-up">Network Evolution Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Mid-20th Century - 0G</h3>
+                            <p>Pre-cellular radio phones. Calls routed through a human operator.</p>
+                            <div class="timeline-details">
+                                <p>The antecedent to 1G, these networks did not use cell towers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Late 1970s/Early 1980s - 1G</h3>
+                            <p>The first generation of wireless cellular technology. Analog voice calls only.</p>
+                            <div class="timeline-details">
+                                <span class="year">1979</span>
+                                <p>Japan's NTT launched the world's first commercial cellular (1G) network in Tokyo.</p>
+                                <span class="year">1983</span>
+                                <p>First U.S. 1G network went live (Ameritech in Chicago).</p>
+                                <span class="year">1984</span>
+                                <p>Motorola's DynaTAC 8000X debuted.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Early 1990s - 2G</h3>
+                            <p>Digital voice calls and SMS messaging introduced.</p>
+                            <div class="timeline-details">
+                                <span class="year">1991</span>
+                                <p>First 2G network (GSM) launched in Finland.</p>
+                                <span class="year">1992</span>
+                                <p>The very first SMS was sent.</p>
+                                <p>Improved call clarity and battery life.</p>
+                                <p>GSM became the global standard.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Early 2000s - 3G</h3>
+                            <p>Mobile internet era begins with truly high-speed mobile data.</p>
+                            <div class="timeline-details">
+                                <span class="year">2001</span>
+                                <p>Japan's NTT DoCoMo launched the world's first commercial 3G network.</p>
+                                <p>Needed to support at least 144 kbps, quickly became much faster.</p>
+                                <p>Enabled smooth web browsing, video calls, and early smartphones.</p>
+                                <span class="year">2008</span>
+                                <p>Launch of Apple's 3G iPhone made mobile internet mainstream.</p>
+                                <p>Speeds often in the 1–5 Mbps range and up to 42 Mbps at peak.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Late 2000s - 4G</h3>
+                            <p>High-speed broadband on the go with "all-IP" networking.</p>
+                            <div class="timeline-details">
+                                <span class="year">2009</span>
+                                <p>First major 4G (LTE) network launched in Stockholm and Oslo.</p>
+                                <p>Eliminated traditional circuit-switching.</p>
+                                <p>Targets around 100 Mbps (mobile) to 1 Gbps (stationary).</p>
+                                <p>Enabled HD video streaming, fast downloads, and real-time gaming.</p>
+                                <p>Powered the mobile Internet of Things (IoT) boom.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Around 2019 - 5G</h3>
+                            <p>The modern connectivity revolution with far higher speeds, lower latency, and massive capacity.</p>
+                            <div class="timeline-details">
+                                <span class="year">2019</span>
+                                <p>Early major deployments in South Korea and the US.</p>
+                                <p>Roughly 10× faster on average than 4G.</p>
+                                <p>Peak theoretical speeds up to 20 Gbps.</p>
+                                <p>Boosts network capacity up to 100× more devices per area.</p>
+                                <p>Enabling smart cities, IoT at scale, automated vehicles, and remote surgery.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Around 2030 - 6G (Future)</h3>
+                            <p>Still largely a vision, aiming to merge communication with computing and sensing.</p>
+                            <div class="timeline-details">
+                                <span class="year">Expected 2030</span>
+                                <p>Initial 6G networks expected.</p>
+                                <p>Terabit-per-second speeds.</p>
+                                <p>AI-driven network optimization, holographic communication, advanced IoT integration.</p>
+                                <p>Proposed use-cases: "Internet of Senses," networks of connected AI machines, digital twins.</p>
+                                <p>Will likely use terahertz spectrum and embed compute everywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="challenges-section" id="challenges">
+            <h2 class="section-title" data-aos="fade-up">Technical Challenges</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card" data-aos="flip-left">
+                    <i class="fas fa-tower-broadcast"></i>
+                    <h3>Infrastructure</h3>
+                    <p>Building and maintaining network infrastructure across different terrains and regions.</p>
+                </div>
+                <div class="challenge-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security</h3>
+                    <p>Protecting networks from cyber threats and ensuring user privacy.</p>
+                </div>
+                <div class="challenge-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Power Consumption</h3>
+                    <p>Managing energy efficiency while maintaining network performance.</p>
+                </div>
+                 <div class="challenge-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Interference</h3>
+                    <p>Minimizing signal interference to ensure reliable connections.</p>
+                </div>
+                 <div class="challenge-card" data-aos="flip-left" data-aos-delay="400">
+                    <i class="fas fa-globe-europe"></i>
+                    <h3>Standardization</h3>
+                    <p>Developing global standards for seamless network operation and device compatibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="innovators-section" id="innovators">
+            <h2 class="section-title" data-aos="fade-up">Leading Innovators</h2>
+            <div class="innovators-grid">
+                <div class="innovator-card" data-aos="zoom-in">
+                    <div class="innovator-image">
+                        <img src="./innovator1.webp" alt="Martin Cooper, inventor of the first handheld mobile phone">
+                    </div>
+                    <div class="innovator-info">
+                        <h3>Martin Cooper</h3>
+                        <p>Pioneer of wireless communication, led the team that developed the first handheld mobile phone.</p>
+                    </div>
+                </div>
+                <div class="innovator-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="innovator-image">
+                        <img src="./ThomasEdison.webp" alt="Thomas Edison, whose work on telegraphy and telephony contributed to early communication systems">
+                    </div>
+                    <div class="innovator-info">
+                        <h3>Thomas Edison</h3>
+                        <p>His inventions and improvements in telegraphy and telephony laid groundwork for future communication.</p>
+                    </div>
+                </div>
+                 <div class="innovator-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="innovator-image">
+                        <img src="./GuglielmoMarconi.webp" alt="Guglielmo Marconi, pioneer of radio technology">
+                    </div>
+                    <div class="innovator-info">
+                        <h3>Guglielmo Marconi</h3>
+                        <p>Known for his pioneering work on long-distance radio transmission.</p>
+                    </div>
+                </div>
+                 <div class="innovator-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="innovator-image">
+                        <img src="./AlexanderGrahamBell.jpg" alt="Alexander Graham Bell, inventor of the telephone">
+                    </div>
+                    <div class="innovator-info">
+                        <h3>Alexander Graham Bell</h3>
+                        <p>Inventor of the first practical telephone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="future-section" id="future">
+            <h2 class="section-title" data-aos="fade-up">The Future of Mobile Networks</h2>
+            <div class="future-content">
+                <div class="future-card" data-aos="flip-left">
+                    <h3>6G Vision</h3>
+                    <p>Expected to revolutionize communication with:</p>
+                    <ul>
+                        <li>Terabit-per-second speeds</li>
+                        <li>AI-driven network optimization</li>
+                        <li>Holographic communication</li>
+                        <li>Advanced IoT integration</li>
+                         <li>Seamless integration of communication, computing, and sensing</li>
+                    </ul>
+                </div>
+                <div class="future-card" data-aos="flip-right">
+                    <h3>Beyond 6G</h3>
+                    <p>Future possibilities include:</p>
+                    <ul>
+                        <li>Quantum communication</li>
+                        <li>Brain-computer interfaces</li>
+                        <li>Smart environment integration</li>
+                         <li>Internet of Senses</li>
+                         <li>Networks of connected AI machines and digital twins</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About This Project</h3>
+                <p>An educational resource exploring the evolution of mobile networks from 0G to the future of 6G, created for the Vibe Coding Challenge.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/yashmagar01" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="credit">Made by yash for the Vibe Coding Challenge</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Wait for the page to fully load
+        window.addEventListener('load', function() {
+            // Get the loader element
+            const loader = document.querySelector('.loader');
+            
+            // Add a small delay to ensure everything is loaded
+            setTimeout(function() {
+                // Add 'loaded' class to trigger the fade out
+                loader.classList.add('loaded');
+                
+                // After the transition ends, hide the loader completely
+                loader.addEventListener('transitionend', function() {
+                    loader.style.display = 'none';
+                    // Initialize AOS after loader is hidden
+                    AOS.init({
+                        duration: 800,
+                        easing: 'ease-in-out',
+                        once: true
+                    });
+                }, { once: true });
+            }, 1000); // 1 second delay to ensure everything is loaded
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
